@@ -26,7 +26,7 @@ def gTime() -> str:
 def createSession(username: str, password: str):
     uri = "https://instagram.com"
 
-    with requests.session() as session:
+    with requests.Session() as session:
         session.headers = {"User-Agent":"Mozilla/5.0"}
 
         session.get(uri)
